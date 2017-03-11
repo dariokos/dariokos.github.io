@@ -26,6 +26,7 @@ h3.postTitle {
 
 h2.subTitle {
 	color: #089de3;
+	padding: 10px 0px;
 }
 
 header {
@@ -94,7 +95,7 @@ main {
 	width: 100%;
 	margin: 0 auto;
 	box-sizing: border-box;
-	padding: 30px 50px;
+	padding: 30px 30px;
 	background-color: white;
 	margin-top: 10px;
 	box-shadow: 0 0 0 0, 0 6px 12px rgba(34,34,34,0.2);
@@ -172,8 +173,46 @@ main {
 	border-radius: 3px;
 }
 
+/* POST PAGE */
 
-@media (max-width: 500px) {
+.postPageContainer {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#postPageImage {
+	float: left;
+	width: 75%;
+}
+
+main.postPage {
+	width: 75%;
+	margin: 0;
+	float: left;
+}
+
+.postPage img {
+	max-width: 700px;
+}
+aside.postPage {
+	box-sizing: border-box;
+	width: 25%;
+	float: right;
+	background-color: white;
+	box-shadow: 0 0 0 0, 0 6px 12px rgba(34,34,34,0.2);
+	border-radius: 2px;
+	padding:20px;
+
+}
+
+aside.postPage li {
+	list-style-type: none;
+	padding-top: 5px;
+}
+
+
+@media (max-width: 700px) {
 
 	body {
 		background-color: #089de3;
@@ -222,7 +261,7 @@ main {
 	header img {
 		display: inline;
 		position: absolute;
-		left: 85%;
+		left: 80%;
 	}
 
 	.kicker {
@@ -249,5 +288,49 @@ main {
 		width: 100%;
 		padding-bottom: 15px;
 	}
+
+	#postPageImage {
+	width: 100%;
+	}
+
+	main.postPage{
+		padding: 15px 25px;
+		margin-top: 5px;
+		border-radius: 0;
+		width: 100%;
+		margin-top: 0;
+	}
+
+	aside.postPage {
+			display: none;
+	}
+
+	.postPage img {
+	width: 100%;
+	}
+
+	}
+
+	@media (min-width: 700px) and (max-width: 1000px) {
+
+		#postPageImage {
+			width: 75%;
+			margin: 0 auto;
+			float: right;
+			position: relative;
+  			right: 12.5%;
+		}
+		aside.postPage {
+			display: none;
+		}
+
+		main.postPage {
+			margin: 0 auto;
+			float: none;
+			clear: both;
+		}
+		.postPage img {
+			max-width: 100%;
+		}
 
 	}
